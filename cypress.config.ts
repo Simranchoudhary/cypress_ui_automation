@@ -11,7 +11,7 @@ export default defineConfig({
       reportDir: "cypress/reports",
       overwrite: false,
       html: true,
-      json: true,
+      json: false,
     },
   },
 });
