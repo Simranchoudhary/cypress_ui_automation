@@ -33,6 +33,7 @@ jobs:
         with:
           name: cypress-videos
           path: cypress/videos/
+          retention-days: 7  # Keeps artifacts for 7 days
 
       - name: Upload Cypress Screenshots (On Failure)
         if: failure()
@@ -40,9 +41,11 @@ jobs:
         with:
           name: cypress-screenshots
           path: cypress/screenshots/
+          retention-days: 7
 
-      - name: Upload HTML Test Reports
+      - name: Upload Cypress HTML Test Reports
         uses: actions/upload-artifact@v3
         with:
           name: mochawesome-reports
           path: cypress/reports/
+          retention-days: 7
