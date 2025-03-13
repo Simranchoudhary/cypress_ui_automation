@@ -1,3 +1,4 @@
+// This test file contains the POM for  Logout functionality of the website
 class LogoutPage {
     visit() {
       cy.visit("https://magento.softwaretestingboard.com/customer/account/");

@@ -1,8 +1,10 @@
+// This test file contains all the test cases for  Logout functionality of the website
+
 import LogoutPage from "../pages/LogoutPage";
 import LoginPage from "../pages/LoginPage";
 
-describe("Logout Test", () => {
-  it("Should log out successfully", () => {
+describe("To test the Logout functionality", () => {
+  it("UC12_User should log out successfully", () => {
     LoginPage.visit();
     LoginPage.fillCredentials("registeredUser");
     LoginPage.submit();

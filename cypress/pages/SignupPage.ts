@@ -1,3 +1,4 @@
+// This test file contains the POM for  SignUp functionality of the website
 class SignupPage {
     visit() {
       cy.visit("https://magento.softwaretestingboard.com/customer/account/create/");

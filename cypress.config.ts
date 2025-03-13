@@ -4,9 +4,9 @@ export default defineConfig({
   e2e: {
     baseUrl: "https://magento.softwaretestingboard.com",
     video: true,
-    screenshotsFolder: "cypress/screenshots",
+    screenshotsFolder: "cypress/screenshots", //in case of failure, the screenshot will be captured in this folder
     videosFolder: "cypress/videos",
-    reporter: "mochawesome",
+    reporter: "mochawesome", // using mochawesome as the reporter
     reporterOptions: {
       reportDir: "cypress/reports",
       overwrite: false,

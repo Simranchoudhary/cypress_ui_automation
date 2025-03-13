@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v4  
 
       - name: Install Node.js
-        uses: actions/setup-node@v4  # Updated to v4
+        uses: actions/setup-node@v4  
         with:
           node-version: '18'
 
@@ -29,7 +29,7 @@ jobs:
 
       - name: Upload Cypress Videos (On Failure)
         if: failure()
-        uses: actions/upload-artifact@v4  # Updated to v4
+        uses: actions/upload-artifact@v4  
         with:
           name: cypress-videos
           path: cypress/videos/
@@ -37,14 +37,14 @@ jobs:
 
       - name: Upload Cypress Screenshots (On Failure)
         if: failure()
-        uses: actions/upload-artifact@v4  # Updated to v4
+        uses: actions/upload-artifact@v4  
         with:
           name: cypress-screenshots
           path: cypress/screenshots/
           retention-days: 7
 
       - name: Upload Cypress HTML Test Reports
-        uses: actions/upload-artifact@v4  # Updated to v4
+        uses: actions/upload-artifact@v4  
         with:
           name: mochawesome-reports
           path: cypress/reports/

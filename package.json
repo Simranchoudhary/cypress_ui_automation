@@ -8,7 +8,7 @@
     "typescript": "^5.8.2" 
   },
   "scripts": {
-    "test:chrome": "npx cypress run --browser chrome --headless"
+    "test:chrome": "npx cypress run --browser chrome --headless" 
   }
   
 }

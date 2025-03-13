@@ -1,3 +1,4 @@
+// This test file contains the POM for  Forget Password functionality of the website
 class ForgotPasswordPage {
     visit() {
       cy.visit("https://magento.softwaretestingboard.com/customer/account/forgotpassword/");

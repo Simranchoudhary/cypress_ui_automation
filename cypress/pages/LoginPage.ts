@@ -1,3 +1,4 @@
+// This test file contains the POM for  Login functionality of the website
 class LoginPage {
     visit() {
       cy.visit("https://magento.softwaretestingboard.com/customer/account/login/");
