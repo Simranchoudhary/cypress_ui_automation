@@ -1,0 +1,14 @@
+{
+  "registeredUser": {
+    "email": "simranchoudhary1319@gmail.com",
+    "password": "Qwerty@12345"
+  },
+  "wrongUser": {
+    "email": "simranchoudhary1319@gmail.com",
+    "password": "Admin@1234"
+  },
+  "unregisteredUser": {
+    "email": "simran4work@outlook.com",
+    "password": "Admin@1234"
+  }
+}
