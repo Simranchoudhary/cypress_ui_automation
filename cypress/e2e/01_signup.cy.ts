@@ -49,6 +49,7 @@ describe("To test the Sign Up functionality", () => {
   });
 
   it("UC05_User should see an error messages for required fields when submitting empty form", () => {
+    SignupPage.visit();
     SignupPage.submit();
 
     cy.get("#firstname-error").should("be.visible").and("contain", "This is a required field.");
@@ -59,7 +60,7 @@ describe("To test the Sign Up functionality", () => {
   });
 
   it("UC06_User should see a password strength error message for weak passwords", () => {
-
+    SignupPage.visit();
     SignupPage.fillFirstName("John");
     SignupPage.fillLastName("Doe");
     SignupPage.fillEmail(`test${Date.now()}@example.com`);
@@ -71,7 +72,8 @@ describe("To test the Sign Up functionality", () => {
   });
 
   it("UC07_User Should see an error when special characters are entered in First Name and Last Name", () => {
- 
+    
+    SignupPage.visit();
     SignupPage.fillFirstName("@John#");
     SignupPage.fillLastName("$Doe!");
 

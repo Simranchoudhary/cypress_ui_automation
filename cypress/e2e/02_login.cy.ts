@@ -27,11 +27,11 @@ describe("To test the Login Functionality", () => {
     cy.contains("The account sign-in was incorrect").should("be.visible");
   });
 
-  it("UC11_User should not log in with empty fields", () => {
+  it("Should not log in with empty fields", () => {
     LoginPage.visit();
     LoginPage.submit();
 
-    cy.contains("This is a required field.").should("be.visible");
+    cy.contains("This is a required field").should("be.visible");
   });
 
 });
