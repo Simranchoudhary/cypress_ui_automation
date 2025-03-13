@@ -29,7 +29,7 @@ describe("Login Test", () => {
     LoginPage.visit();
     LoginPage.submit();
 
-    cy.contains("This is a required field").should("be.visible");
+    cy.contains("A login and a password are required").should("be.visible");
   });
 
 });
