@@ -18,22 +18,6 @@ This project is an end-to-end test automation suite for the Magento website, bui
 - CI/CD: GitHub Actions  
 - Test Execution Browser: Chrome (Headless Mode)  
 
-## Installation & Setup
-### Clone the Repository
-git clone [GitHub Repository URL]
-cd [Project Folder]
-
-### Install Dependencies
-npm install
-
-### Run Tests Locally
-#### Run Cypress in Chrome (Headless Mode)
-
-npx cypress run --browser chrome --headless
-
-#### Run Cypress in GUI Mode
-
-npx cypress open
 
 ## Test Case Details
 ### Functionalities Automated
